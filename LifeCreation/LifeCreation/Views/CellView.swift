@@ -26,7 +26,7 @@ struct CellView: View {
             ZStack {
                 Circle()
                     .fill(
-                        LinearGradient(colors: [type.gradientColor1, type.gradientColor2], 
+                        LinearGradient(colors: [type.gradientTopColor, type.gradientBottomColor], 
                                        startPoint: .top,
                                        endPoint: .bottom))
                 Text(type.icon)

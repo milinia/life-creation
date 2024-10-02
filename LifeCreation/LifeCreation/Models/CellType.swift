@@ -47,7 +47,7 @@ enum CellType: Int {
         }
     }
     
-    var gradientColor1: Color {
+    var gradientTopColor: Color {
         switch self {
         case .dead:
             return Color(red: 13/255, green: 101/255, blue: 138/255)
@@ -58,7 +58,7 @@ enum CellType: Int {
         }
     }
 
-    var gradientColor2: Color {
+    var gradientBottomColor: Color {
         switch self {
         case .dead:
             return Color(red: 176/255, green: 255/255, blue: 180/255)
