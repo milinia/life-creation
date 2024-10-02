@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E5E2540C2CAD3A8A0089E051 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2540B2CAD3A8A0089E051 /* CellModel.swift */; };
+		E5E254152CAD83910089E051 /* LifeCreationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E254142CAD83910089E051 /* LifeCreationViewModelTests.swift */; };
+		E5E2541C2CAD8A8A0089E051 /* RandomNumberGeneratorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2541B2CAD8A8A0089E051 /* RandomNumberGeneratorMock.swift */; };
+		E5E254202CAD8F240089E051 /* RandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2541F2CAD8F240089E051 /* RandomNumberGenerator.swift */; };
 		E5F2A7DB2CAC035D0069E3EC /* LifeCreationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A7DA2CAC035D0069E3EC /* LifeCreationApp.swift */; };
 		E5F2A7DD2CAC035D0069E3EC /* LifeCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A7DC2CAC035D0069E3EC /* LifeCreationView.swift */; };
 		E5F2A7DF2CAC035E0069E3EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F2A7DE2CAC035E0069E3EC /* Assets.xcassets */; };
@@ -19,8 +22,22 @@
 		E5F2A8012CAC36810069E3EC /* LifeCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A8002CAC36810069E3EC /* LifeCreationViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E5E254162CAD83910089E051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5F2A7CF2CAC035D0069E3EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5F2A7D62CAC035D0069E3EC;
+			remoteInfo = LifeCreation;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E5E2540B2CAD3A8A0089E051 /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		E5E254122CAD83910089E051 /* LifeCreationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeCreationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E254142CAD83910089E051 /* LifeCreationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCreationViewModelTests.swift; sourceTree = "<group>"; };
+		E5E2541B2CAD8A8A0089E051 /* RandomNumberGeneratorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberGeneratorMock.swift; sourceTree = "<group>"; };
+		E5E2541F2CAD8F240089E051 /* RandomNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberGenerator.swift; sourceTree = "<group>"; };
 		E5F2A7D72CAC035D0069E3EC /* LifeCreation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCreation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F2A7DA2CAC035D0069E3EC /* LifeCreationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCreationApp.swift; sourceTree = "<group>"; };
 		E5F2A7DC2CAC035D0069E3EC /* LifeCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCreationView.swift; sourceTree = "<group>"; };
@@ -35,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E5E2540F2CAD83910089E051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5F2A7D42CAC035D0069E3EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,10 +77,28 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E5E254132CAD83910089E051 /* LifeCreationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5E254142CAD83910089E051 /* LifeCreationViewModelTests.swift */,
+				E5E2541B2CAD8A8A0089E051 /* RandomNumberGeneratorMock.swift */,
+			);
+			path = LifeCreationTests;
+			sourceTree = "<group>";
+		};
+		E5E2541D2CAD8F0E0089E051 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2541F2CAD8F240089E051 /* RandomNumberGenerator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E5F2A7CE2CAC035D0069E3EC = {
 			isa = PBXGroup;
 			children = (
 				E5F2A7D92CAC035D0069E3EC /* LifeCreation */,
+				E5E254132CAD83910089E051 /* LifeCreationTests */,
 				E5F2A7D82CAC035D0069E3EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				E5F2A7D72CAC035D0069E3EC /* LifeCreation.app */,
+				E5E254122CAD83910089E051 /* LifeCreationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +115,7 @@
 		E5F2A7D92CAC035D0069E3EC /* LifeCreation */ = {
 			isa = PBXGroup;
 			children = (
+				E5E2541D2CAD8F0E0089E051 /* Helpers */,
 				E5F2A7FF2CAC36020069E3EC /* App */,
 				E5E2540D2CAD3B8E0089E051 /* ViewModel */,
 				E5F2A7FE2CAC35F80069E3EC /* Views */,
@@ -138,6 +182,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E5E254112CAD83910089E051 /* LifeCreationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E254182CAD83910089E051 /* Build configuration list for PBXNativeTarget "LifeCreationTests" */;
+			buildPhases = (
+				E5E2540E2CAD83910089E051 /* Sources */,
+				E5E2540F2CAD83910089E051 /* Frameworks */,
+				E5E254102CAD83910089E051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5E254172CAD83910089E051 /* PBXTargetDependency */,
+			);
+			name = LifeCreationTests;
+			productName = LifeCreationTests;
+			productReference = E5E254122CAD83910089E051 /* LifeCreationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E5F2A7D62CAC035D0069E3EC /* LifeCreation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5F2A7EA2CAC035E0069E3EC /* Build configuration list for PBXNativeTarget "LifeCreation" */;
@@ -165,6 +227,10 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					E5E254112CAD83910089E051 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E5F2A7D62CAC035D0069E3EC;
+					};
 					E5F2A7D62CAC035D0069E3EC = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -184,11 +250,19 @@
 			projectRoot = "";
 			targets = (
 				E5F2A7D62CAC035D0069E3EC /* LifeCreation */,
+				E5E254112CAD83910089E051 /* LifeCreationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E5E254102CAD83910089E051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5F2A7D52CAC035D0069E3EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,6 +277,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E5E2540E2CAD83910089E051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E254152CAD83910089E051 /* LifeCreationViewModelTests.swift in Sources */,
+				E5E2541C2CAD8A8A0089E051 /* RandomNumberGeneratorMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5F2A7D32CAC035D0069E3EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,13 +295,56 @@
 				E5E2540C2CAD3A8A0089E051 /* CellModel.swift in Sources */,
 				E5F2A7F02CAC04000069E3EC /* CellView.swift in Sources */,
 				E5F2A7DD2CAC035D0069E3EC /* LifeCreationView.swift in Sources */,
+				E5E254202CAD8F240089E051 /* RandomNumberGenerator.swift in Sources */,
 				E5F2A7DB2CAC035D0069E3EC /* LifeCreationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E5E254172CAD83910089E051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5F2A7D62CAC035D0069E3EC /* LifeCreation */;
+			targetProxy = E5E254162CAD83910089E051 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		E5E254192CAD83910089E051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = evelina.LifeCreationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeCreation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LifeCreation";
+			};
+			name = Debug;
+		};
+		E5E2541A2CAD83910089E051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = evelina.LifeCreationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeCreation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LifeCreation";
+			};
+			name = Release;
+		};
 		E5F2A7E82CAC035E0069E3EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -401,6 +527,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E5E254182CAD83910089E051 /* Build configuration list for PBXNativeTarget "LifeCreationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E254192CAD83910089E051 /* Debug */,
+				E5E2541A2CAD83910089E051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E5F2A7D22CAC035D0069E3EC /* Build configuration list for PBXProject "LifeCreation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

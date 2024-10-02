@@ -12,7 +12,7 @@ struct LifeCreationApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LifeCreationView(viewModel: LifeCreationViewModel())
+            LifeCreationView(viewModel: LifeCreationViewModel(randomNumberGenerator: RandomNumberGenerator()))
         }
     }
 }

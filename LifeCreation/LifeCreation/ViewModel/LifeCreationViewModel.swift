@@ -9,10 +9,15 @@ import Foundation
 
 final class LifeCreationViewModel: ObservableObject {
     @Published var cells: [CellModel] = []
-    private var lifeIndexes: [Int] = []
+    var lifeIndexes: [Int] = []
+    private let randomNumberGenerator: RandomNumberGeneratorProtocol
+    
+    init(randomNumberGenerator: RandomNumberGeneratorProtocol) {
+        self.randomNumberGenerator = randomNumberGenerator
+    }
     
     func createNewCell() {
-        let randomNumber = Int.random(in: 0..<2)
+        let randomNumber = randomNumberGenerator.random(in: 0..<2)
         guard let type = CellType(rawValue: randomNumber) else { return }
         let newCell = CellModel(type: type)
         cells.append(newCell)
